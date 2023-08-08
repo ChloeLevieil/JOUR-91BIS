@@ -2,12 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles.css */
 .Navbar {
   background-color: #8a2be2;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
   outline: none;
   color: #fdff74 !important;
+}
+
+/* ... autres styles ... */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.links-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  margin-left: 20px;
+  color: #fdff74;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.works-link {
+  margin-right: 20px;
 }
 
 a:hover {
@@ -70,5 +104,15 @@ h1 {
   text-align: center;
   color: white;
   width: 100%;
-  font-size: xx-large;
+  font-size: 2em;
+}
+
+.text-with-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.title-header {
+  color: #ffffff;
+  font-family: 'Inter', sans-serif; 
+  font-size: 2em;
 }

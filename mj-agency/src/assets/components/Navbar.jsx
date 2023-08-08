@@ -6,18 +6,18 @@ export default function Navbar() {
   return (
     <nav className="Navbar">
       <div className="py-3">
-        <div className="d-flex align-items-end justify-content-between">
-          <div>
+        <div className="navbar-container">
+          <div className="logo-container">
             <img src={logomjagency} alt="Logo MJ Agency" style={{ width: '150px', height: 'auto' }} />
           </div>
-          <div className="d-flex align-items-end">
-            <Link to="/" className="mx-2 text-md text-semibold">
+          <div className="links-container">
+            <Link to="/" className="nav-link">
               Home
             </Link>
-            <Link to="/about" className="mx-2 text-md text-semibold">
+            <Link to="/about" className="nav-link">
               About
             </Link>
-            <Link to="/works" className="mx-2 text-md text-semibold">
+            <Link to="/works" className="nav-link works-link">
               Works
             </Link>
           </div>

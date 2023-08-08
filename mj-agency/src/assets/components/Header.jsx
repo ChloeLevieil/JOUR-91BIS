@@ -10,9 +10,10 @@ export default function ImgHeader() {
           <img src={imgheader} alt="Bienvenue sur le site de l'agence MJ Agency" style={{ width: '100%', height: 'auto' }} />
         </div>
         <div className="text-overlay">
-          <h1>Bienvenue dans notre agence MJ Agency</h1>
-          <p>Une agence super bidon !</p>
-
+          <div className='text-with-shadow'>
+            <h1 className='title-header'>Bienvenue dans notre agence MJ Agency</h1>
+            <p className='pb-2'>Une agence super bidon !</p>
+          </div>
           <Link to="/works" className="btn-bg-purple btn-small p-2">
             Voir nos supers projets
           </Link>
