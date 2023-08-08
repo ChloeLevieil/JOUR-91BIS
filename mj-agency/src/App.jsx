@@ -5,7 +5,6 @@ import Home from './assets/components/Home';
 import About from './assets/components/About';
 import Works from './assets/components/Works';
 import Navbar from './assets/components/Navbar';
-import Header from './assets/components/Header';
 import './index.css'
 
 function App() {
