@@ -1,23 +1,39 @@
-import React from 'react'
+import React from 'react';
+import queen from '../queen.png';
+import paon from '../paon.png'
+import kings from '../kings.png'
+import { Link } from 'react-router-dom';
 
-<div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-    <div class="max-w-2xl">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-600">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.</p>
+export default function CardsWorks() {
+  return (
+    <div className='cards-container'>
+      <div className='card'>
+        <img src={queen} className='img-card' alt="Bienvenue sur le site de l'agence MJ Agency" />
+        <p className='title-project'>Le challenge</p>
+        <p>Platon a décidé de se lancer à l'époque malgré une crise économique difficile.</p>  
+        <p>Nous avons été derrière eux pour leur apporter le meilleur du Web et du digital. Nous sommes vraiment la meilleure agence. &#128129;</p>
+        <Link to="/platon" className="btn-bg-purple btn-small">
+          Voir le projet
+        </Link>
+      </div>
+
+      <div className='card'>
+        <img src={paon} className='img-card' alt="Bienvenue sur le site de l'agence MJ Agency" />
+        <p className='title-project'>Solane est le premier vendeur de fraises du Poitou-Charentes</p>
+        <p>Et c'est grâce à nous. Dans les moments les meilleurs comme les plus durs, nos campagnes de communication sur la place du marché ont fonctionné.</p>
+        <Link to="/sedal" className="btn-bg-purple btn-small">
+          Voir le projet
+        </Link>
+      </div>
+
+      <div className='card'>
+        <img src={kings} className='img-card' alt="Bienvenue sur le site de l'agence MJ Agency" />
+        <p className='title-project'>Sedal, l'entreprise qui a commencé tout en bas... Et qui est toujours tout en bas</p>
+        <p>Malgré nos conseils et notre site web créé sur Wix, Sedal semble ne pas vouloir décoller. Mais comme un grand homme et une grande femme l'ont dit, "les derniers seront les premiers".</p>
+        <Link to="/solane" className="btn-bg-purple btn-small">
+          Voir le projet
+        </Link>
+      </div>
     </div>
-    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Leslie Alexander</h3>
-            <p class="text-sm font-semibold leading-6 text-indigo-600">Co-Founder / CEO</p>
-          </div>
-        </div>
-      </li>
-
-      <!-- More people... -->
-    </ul>
-  </div>
-</div>
+  );
+}

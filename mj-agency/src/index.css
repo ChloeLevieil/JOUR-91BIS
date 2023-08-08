@@ -124,3 +124,24 @@ p {
   font-family: 'Inter', sans-serif; 
   font-size: 2em;
 }
+
+.cards-container {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+.img-card {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.title-project {
+  color :#8a2be2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  padding: 1.5em;
+}
